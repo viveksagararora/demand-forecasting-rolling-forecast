@@ -237,7 +237,3 @@ Bennett University
 - ✔ Built an interpretable machine learning forecasting pipeline suitable for retail demand planning.
 
 ---
-
-## License
-
-This project was developed for an academic demand forecasting case study and is intended for educational and portfolio purposes.
