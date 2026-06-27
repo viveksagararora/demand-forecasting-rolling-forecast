@@ -155,25 +155,25 @@ This closely replicates how demand forecasting is performed in production enviro
 
 # 📊 Model Evaluation
 
-The model was evaluated using **Rolling-Origin Forecasting**, ensuring that future observations were never used during training.
+The model was evaluated using a **Rolling-Origin Forecasting** strategy, ensuring that predictions were generated using only historical data available at each forecast origin. This approach closely simulates a real-world demand planning workflow and prevents future data leakage.
 
 ### Evaluation Metrics
 
 | Metric | Value |
 |---------|-------|
-| **MAE** | **24.14** |
-| **RMSE** | **56.73** |
-| **MAPE** | **4.12%** |
+| **MAE** | **27.17** |
+| **RMSE** | **63.53** |
+| **MAPE** | **5.00%** |
 
 ### Why These Metrics?
 
-- **MAE (Mean Absolute Error)** was selected as the primary business metric because it measures the average forecasting error in units sold. This directly reflects how much production may deviate from actual demand, helping estimate the risk of stock-outs and excess inventory.
+- **MAE (Mean Absolute Error)** is the primary business metric because it measures the average forecasting error in units sold. This directly reflects how much production may differ from actual demand, making it valuable for estimating the risk of stock-outs and excess inventory.
 
-- **RMSE (Root Mean Squared Error)** penalizes larger forecasting errors, making it useful for identifying weeks where the model performs poorly.
+- **RMSE (Root Mean Squared Error)** places greater emphasis on larger forecasting errors, helping identify periods where demand deviates significantly from predictions.
 
-- **MAPE (Mean Absolute Percentage Error)** expresses forecasting error as a percentage, making performance easy to interpret across products with different demand levels.
+- **MAPE (Mean Absolute Percentage Error)** expresses forecasting error as a percentage, making model performance easy to interpret across different supermarket–SKU combinations.
 
-A **MAPE of 4.12%** indicates that the model forecasts weekly demand with high accuracy.
+A **MAPE of 5.00%** indicates that the model predicts weekly demand with high accuracy while maintaining a realistic rolling forecasting evaluation strategy.
 
 ---
 
