@@ -215,42 +215,6 @@ The proposed forecasting solution can help demand planners:
 
 ---
 
-# 📁 Repository Structure
-
-```
-demand-forecasting-rolling-forecast/
-│
-├── data/
-│   ├── demand.csv
-│   └── promotions.csv
-│
-├── notebook/
-│   └── Demand_Forecasting.ipynb
-│
-├── presentation/
-│   └── Business_Summary.pdf
-│
-├── images/
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
-```
-
----
-
-# 📌 Future Improvements
-
-Potential future enhancements include:
-
-- XGBoost-based forecasting
-- LightGBM and CatBoost comparison
-- Hyperparameter optimization
-- Holiday and weather features
-- Automated forecasting pipeline
-- Model deployment using FastAPI or Streamlit
-
----
 
 # 👨‍💻 Author
 
